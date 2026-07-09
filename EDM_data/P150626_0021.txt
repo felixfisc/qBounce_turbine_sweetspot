@@ -1,0 +1,54 @@
+File Name : P150626_0021.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 15:41:49
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 15:42:49
+Absolute Time : 600000000
+No of Counts : 21911188
+Count Rate   : 365186.47
+Count Rate Error : 78.02
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 70, 28, 2, 0, 0, 0 (15280855 Si, 6104062 Db, 421041 Tr, 105230 Mu, 15272 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (514036 T1, 13524241 T2, 7616430 T3, 256481 TM, 10049 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 21911188, EB DL 0, ED DL 19830103, HB DL 0 
+
+

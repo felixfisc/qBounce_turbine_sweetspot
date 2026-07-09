@@ -1,0 +1,68 @@
+File Name : C090626_0001.cip
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Type of Display : 2D Pixel
+X Resolution Display : 8
+Y Resolution Display : 8
+
+Type of List Mode Data : 1
+LM-Data file binary: 0
+
+Sum Column : 0
+Data file binary : 0
+Data file format (binary) : Register Value, [ Channels ]
+Data file format (ascii, per row) : Register Value, (Sum), Channel-0, Channel-1, ...
+CIPix : All
+CIPix Register : Vref
+Start Value : 100
+End Value : 128
+Delta : 3
+Nominal No of X Positions : 10
+
+Measurement time, Counts and Count Rate are only valid per position!
+Start Time   : 15:00:57
+Nominal Time : 00:00:03
+Real Time    : 00:00:03
+Stop Time    : 15:01:33
+Absolute Time : 30000000
+Actual No of X Positions : 10
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 127 
+Vref1: 127 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 77, 11, 3, 5, 3, 0 (1472851 Si, 219227 Db, 58121 Tr, 97978 Mu, 63303 Iv, 0 Mh)
+: 100, 0, 0, 0, 0 (1848175 T1, 1 T2, 1 T3, 0 TM, 0 TI)
+5317481 Corner, 29273651 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 1848173, EB DL 4, ED DL 1758061, HB DL 0 
+
+

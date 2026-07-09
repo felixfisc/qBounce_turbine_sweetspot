@@ -1,0 +1,1202 @@
+File Name : C090626_0001.cip
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Type of Display : 2D Pixel
+X Resolution Display : 8
+Y Resolution Display : 8
+
+Type of List Mode Data : 1
+LM-Data file binary: 0
+
+Sum Column : 0
+Data file binary : 0
+Data file format (binary) : Register Value, [ Channels ]
+Data file format (ascii, per row) : Register Value, (Sum), Channel-0, Channel-1, ...
+CIPix : All
+CIPix Register : Vref
+Start Value : 100
+End Value : 128
+Delta : 3
+Nominal No of X Positions : 10
+
+Measurement time, Counts and Count Rate are only valid per position!
+Start Time   : 15:01:33
+Nominal Time : 00:00:03
+Real Time    : 00:00:03
+Stop Time    : 15:01:33
+Absolute Time : 30000000
+Actual No of X Positions : 10
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 127 
+Vref1: 127 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 77, 11, 3, 5, 3, 0 (1472851 Si, 219227 Db, 58121 Tr, 97978 Mu, 63303 Iv, 0 Mh)
+: 100, 0, 0, 0, 0 (1848175 T1, 1 T2, 1 T3, 0 TM, 0 TI)
+5317481 Corner, 29273651 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 1848173, EB DL 4, ED DL 1758061, HB DL 0 
+
+
+File Name : P090626_0001.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 15:03:44
+Nominal Time : 00:01:03
+Real Time    : 00:01:03
+Stop Time    : 15:03:44
+Absolute Time : 630000000
+No of Counts : 0
+Count Rate   : 0.00
+Count Rate Error : 0.00
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 0, 0, 0, 0, 0, 0 (0 Si, 0 Db, 0 Tr, 0 Mu, 0 Iv, 0 Mh)
+: 0, 0, 0, 0, 0 (0 T1, 0 T2, 0 T3, 0 TM, 0 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 0, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0002.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 15:08:50
+Nominal Time : 00:01:03
+Real Time    : 00:01:03
+Stop Time    : 15:08:50
+Absolute Time : 630000000
+No of Counts : 614619
+Count Rate   : 9755.86
+Count Rate Error : 12.44
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 73, 26, 1, 0, 0, 0 (446448 Si, 158947 Db, 8715 Tr, 509 Mu, 4 Iv, 0 Mh)
+: 3, 65, 32, 0, 0 (15604 T1, 399727 T2, 196395 T3, 2893 TM, 8 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 614619, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0003.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 15:12:56
+Nominal Time : 00:01:03
+Real Time    : 00:01:03
+Stop Time    : 15:12:56
+Absolute Time : 630000000
+No of Counts : 21
+Count Rate   : 0.33
+Count Rate Error : 0.07
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 29, 0, 0, 0, 0 (15 Si, 6 Db, 0 Tr, 0 Mu, 0 Iv, 0 Mh)
+: 0, 67, 33, 0, 0 (0 T1, 14 T2, 7 T3, 0 TM, 0 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 21, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0004.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 15:14:18
+Nominal Time : 00:01:03
+Real Time    : 00:01:03
+Stop Time    : 15:14:18
+Absolute Time : 630000000
+No of Counts : 23058651
+Count Rate   : 366010.33
+Count Rate Error : 76.22
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (16447108 Si, 6127981 Db, 389793 Tr, 93769 Mu, 13725 Iv, 0 Mh)
+: 2, 64, 33, 1, 0 (574415 T1, 14661923 T2, 7557373 T3, 264940 TM, 9558 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 23058651, EB DL 0, ED DL 20870999, HB DL 0 
+
+
+File Name : P090626_0005.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 16:30:39
+Nominal Time : 00:01:03
+Real Time    : 00:01:03
+Stop Time    : 16:30:39
+Absolute Time : 630000000
+No of Counts : 27
+Count Rate   : 0.43
+Count Rate Error : 0.08
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 59, 22, 0, 3, 16, 0 (19 Si, 7 Db, 0 Tr, 1 Mu, 5 Iv, 0 Mh)
+: 28, 41, 21, 3, 7 (8 T1, 12 T2, 6 T3, 1 TM, 2 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 27, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0006.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 16:59:28
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 16:59:28
+Absolute Time : 600000000
+No of Counts : 613486
+Count Rate   : 10224.77
+Count Rate Error : 13.05
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (437152 Si, 165796 Db, 9840 Tr, 698 Mu, 11 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (14178 T1, 381187 T2, 214023 T3, 4098 TM, 8 TI)
+1 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 613486, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0007.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:02:56
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:02:56
+Absolute Time : 600000000
+No of Counts : 619886
+Count Rate   : 10331.43
+Count Rate Error : 13.12
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (441802 Si, 167645 Db, 9683 Tr, 756 Mu, 9 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (14200 T1, 384752 T2, 216824 T3, 4110 TM, 8 TI)
+1 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 619886, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0008.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:05:32
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:05:32
+Absolute Time : 600000000
+No of Counts : 1167929
+Count Rate   : 19465.48
+Count Rate Error : 18.01
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (832469 Si, 315498 Db, 18478 Tr, 1484 Mu, 43 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (26679 T1, 724728 T2, 408816 T3, 7706 TM, 19 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 1167929, EB DL 0, ED DL 0, HB DL 0 
+
+
+File Name : P090626_0009.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:07:54
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:07:54
+Absolute Time : 600000000
+No of Counts : 2764938
+Count Rate   : 46082.30
+Count Rate Error : 27.71
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (1969759 Si, 746399 Db, 44656 Tr, 4124 Mu, 204 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (63896 T1, 1715139 T2, 966209 T3, 19694 TM, 161 TI)
+0 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 2764938, EB DL 0, ED DL 689213, HB DL 0 
+
+
+File Name : P090626_0010.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:10:22
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:10:22
+Absolute Time : 600000000
+No of Counts : 4757185
+Count Rate   : 79286.42
+Count Rate Error : 36.35
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (3384918 Si, 1286648 Db, 77081 Tr, 8538 Mu, 641 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (109728 T1, 2948970 T2, 1661164 T3, 37323 TM, 431 TI)
+1 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 4757185, EB DL 0, ED DL 2682195, HB DL 0 
+
+
+File Name : P090626_0011.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:13:01
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:13:01
+Absolute Time : 600000000
+No of Counts : 7150231
+Count Rate   : 119170.52
+Count Rate Error : 44.57
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (5078959 Si, 1937694 Db, 118133 Tr, 15445 Mu, 1352 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (165885 T1, 4425668 T2, 2496933 T3, 61745 TM, 1018 TI)
+1 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 7150231, EB DL 0, ED DL 5072743, HB DL 0 
+
+
+File Name : P090626_0012.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:15:36
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:15:36
+Absolute Time : 600000000
+No of Counts : 9985036
+Count Rate   : 166417.27
+Count Rate Error : 52.67
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (7080765 Si, 2710235 Db, 168140 Tr, 25896 Mu, 2746 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (233653 T1, 6169191 T2, 3486981 T3, 95211 TM, 1942 TI)
+1 Corner, 3 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 9985036, EB DL 0, ED DL 7904069, HB DL 0 
+
+
+File Name : P090626_0013.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:18:31
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:18:31
+Absolute Time : 600000000
+No of Counts : 12662919
+Count Rate   : 211048.65
+Count Rate Error : 59.31
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (8964110 Si, 3443537 Db, 217536 Tr, 37736 Mu, 4594 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (297489 T1, 7812972 T2, 4422312 T3, 130146 TM, 3174 TI)
+1 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 12662919, EB DL 0, ED DL 10581865, HB DL 0 
+
+
+File Name : P090626_0014.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:21:38
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:21:38
+Absolute Time : 600000000
+No of Counts : 15376199
+Count Rate   : 256269.98
+Count Rate Error : 65.35
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (10867419 Si, 4186968 Db, 268679 Tr, 53133 Mu, 6899 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (364007 T1, 9470454 T2, 5370068 T3, 171670 TM, 4810 TI)
+1 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 15376199, EB DL 0, ED DL 13295091, HB DL 0 
+
+
+File Name : P090626_0015.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:24:02
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:24:02
+Absolute Time : 600000000
+No of Counts : 17940274
+Count Rate   : 299004.57
+Count Rate Error : 70.59
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (12663897 Si, 4890300 Db, 316847 Tr, 69230 Mu, 9464 Iv, 0 Mh)
+: 2, 61, 35, 1, 0 (425017 T1, 11036494 T2, 6264741 T3, 214022 TM, 6895 TI)
+0 Corner, 2 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 17940274, EB DL 0, ED DL 15867295, HB DL 0 
+
+
+File Name : P090626_0016.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:26:30
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:26:30
+Absolute Time : 600000000
+No of Counts : 20446536
+Count Rate   : 340775.60
+Count Rate Error : 75.36
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 70, 27, 2, 0, 0, 0 (14417643 Si, 5577390 Db, 364856 Tr, 86647 Mu, 12040 Iv, 0 Mh)
+: 2, 61, 35, 1, 0 (485724 T1, 12561783 T2, 7138682 T3, 260347 TM, 8898 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 20446536, EB DL 0, ED DL 18348971, HB DL 0 
+
+
+File Name : P090626_0017.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:29:00
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:29:00
+Absolute Time : 600000000
+No of Counts : 21618962
+Count Rate   : 360316.03
+Count Rate Error : 77.49
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 70, 27, 2, 0, 0, 0 (15237750 Si, 5896860 Db, 389209 Tr, 95143 Mu, 13795 Iv, 0 Mh)
+: 2, 61, 35, 1, 0 (513239 T1, 13280465 T2, 7542906 T3, 282352 TM, 10272 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 21618962, EB DL 0, ED DL 19546046, HB DL 0 
+
+
+File Name : P090626_0018.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:31:27
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:31:27
+Absolute Time : 600000000
+No of Counts : 21072951
+Count Rate   : 351215.85
+Count Rate Error : 76.51
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 70, 27, 2, 0, 0, 0 (14854929 Si, 5749674 Db, 377657 Tr, 90691 Mu, 12992 Iv, 0 Mh)
+: 2, 61, 35, 1, 0 (500415 T1, 12948030 T2, 7352922 T3, 271584 TM, 9390 TI)
+0 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 21072951, EB DL 0, ED DL 18991842, HB DL 0 
+
+
+File Name : P090626_0019.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:33:52
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:33:52
+Absolute Time : 600000000
+No of Counts : 17466944
+Count Rate   : 291115.73
+Count Rate Error : 69.66
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (12328983 Si, 4763472 Db, 308319 Tr, 66170 Mu, 8744 Iv, 0 Mh)
+: 2, 61, 35, 1, 0 (413106 T1, 10740366 T2, 6107262 T3, 206210 TM, 6332 TI)
+3 Corner, 4 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 17466944, EB DL 0, ED DL 15394108, HB DL 0 
+
+
+File Name : P090626_0020.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:36:26
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:36:26
+Absolute Time : 600000000
+No of Counts : 13951165
+Count Rate   : 232519.42
+Count Rate Error : 62.25
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (9864257 Si, 3799164 Db, 242145 Tr, 45599 Mu, 5496 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (328644 T1, 8590587 T2, 4882465 T3, 149469 TM, 4011 TI)
+2 Corner, 0 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 13951165, EB DL 0, ED DL 11870150, HB DL 0 
+
+
+File Name : P090626_0021.pad
+CDT Detector Control : Version 10.1 (Build: Jul  2 2019), CASCADE Hardware Library 5.2 (Build: Jul  3 2019), Optimized for firmware DAQBox 3.2 and CDR 10.2
+
+Detector Name : 
+DAQBox Serial Number : 6XQ7FR7658
+Readout Structure : 2D Pixel
+No of X Stripes or Pixel : 8
+No of Y Stripes or Pixel : 8
+
+Type of Readout : 2D Pixel
+X Resolution : 8
+Y Resolution : 8
+
+Data file binary : 0
+Data file format (column = x, row = y) : (x0, y0) (x1, y0) (x2, y0) ...
+                                         (x0, y1) (x1, y1) ...
+Start Time   : 17:39:15
+Nominal Time : 00:01:00
+Real Time    : 00:01:00
+Stop Time    : 17:39:15
+Absolute Time : 600000000
+No of Counts : 10224145
+Count Rate   : 170402.42
+Count Rate Error : 53.29
+
+History:
+DAQBox firmware 3.2 from 1.12.2015
+CIPix:  X0 
+Ipre:  200 
+Isha:   20 
+Ibuf:   40 
+Icomp:  20 
+Idriver:  40 
+Vfp:   140 
+Vfs:   150 
+Vref0: 112 
+Vref1: 112 
+Voffset:  50 
+Analog Out:   0 
+TpReg:   1 
+CIPixReg:   1 
+FSetup: 0x37330422
+Delay Demux: 0 
+Mask Registers:
+0xffffffff 0xffffffff 
+Event-Filter Configuration: 0x1040
+Max. Event Length: 5
+Max. Event Skew: 1
+: 71, 27, 2, 0, 0, 0 (7238019 Si, 2783823 Db, 174326 Tr, 27977 Mu, 2888 Iv, 0 Mh)
+: 2, 62, 35, 1, 0 (240050 T1, 6301004 T2, 3584206 T3, 98885 TM, 2057 TI)
+2 Corner, 1 All
+DX AS 0, DX AS-PAT 0x0000, DX TO-FW 0, DDP 10, EB Events 10224145, EB DL 0, ED DL 8143210, HB DL 0 
+
+
