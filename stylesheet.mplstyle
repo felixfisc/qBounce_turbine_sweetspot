@@ -1,0 +1,23 @@
+#figure.figsize :    4.9, 3.5 # about 0.8 linewidth
+#figure.figsize :    6.3, 3.5 # full linewidth
+figure.figsize : 6.3, 4 
+
+
+font.size:          10.0
+font.family:        STIXGeneral
+mathtext.fontset:   stix
+
+figure.constrained_layout.use:      True
+figure.constrained_layout.h_pad:    0.005
+figure.constrained_layout.w_pad:    0.005
+figure.constrained_layout.hspace:   0.005
+figure.constrained_layout.wspace:   0.005
+
+xtick.direction: in
+ytick.direction: in
+xtick.top: True
+ytick.right: True
+
+axes.prop_cycle: cycler('color', ['F2999D', 'F94449', 'F4D06F', 'FF8811', '9DD9D2', '279AF1', '392F5A'])
+
+legend.frameon: False
