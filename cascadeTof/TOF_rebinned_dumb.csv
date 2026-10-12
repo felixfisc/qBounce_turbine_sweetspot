@@ -1,4 +1,4 @@
-v [m/s]	Rate [cps/(m/s)] 631 mm tube	Rate error [cps/(m/s)] 631 mm tube	Processed rate [cps/(m/s)] 460 mm tube	Rate error [cps/(m/s)] 460 mm tube
+v [m/s]	Counts [counts/(m/s)] 631 mm tube	Counts error [counts/(m/s)] 631 mm tube	Counts [counts/(m/s)] 460 mm tube	Counts error [counts/(m/s)] 460 mm tube
 4.0	14907.547741123006	18.619536964444162	13964.362323662845	20.88986171841412
 4.111111111111111	17332.85875246363	20.560949698375143	16869.879975453394	23.713484191807687
 4.222222222222222	20484.730676975272	22.91832246343147	19234.267671547503	26.20950459521692
