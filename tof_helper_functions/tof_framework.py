@@ -1,9 +1,4 @@
 import numpy as np
-import pandas as pd
-#from matplotlib import pyplot as plt
-#import matplotlib.colors as mcolors
-#import math
-#import scipy
 
 class RawTOFPoint:
     def __init__(self, 
