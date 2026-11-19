@@ -58,7 +58,7 @@ class RawTOFPointList(list):
                 convolution_t = convolution_t,
                 convolution_t_err = convolution_t_err
             ))
-        self.s = s
+        self.s = s + 8.0 # chopper padding is 8 mm
         self.label = label
 
     @property
