@@ -157,7 +157,7 @@ class RebinnedTOFPoint:
         self.origin_indices_list = origin_indices_list
         self.origin_number = len(self.origin_indices_list)
         self.v = v
-        self.v_err = None
+        self.v_err = 0.0 # set to zero because v is a theory quantity without an uncertainty, left as a placeholder incase needed in the future
         self.N_v = N_v
         self.N_v_err = N_v_err
 
@@ -214,7 +214,7 @@ class RebinnedTOFPointList(list):
                     N_v_err = 1 / np.sqrt( np.sum(weights) )
                 ))
 
-    def find_peakvel(self, 
+    def find_peak_velocity(self, 
                      v_low = None, v_high = None,
                      gausstype='fourpoints', 
                      a0 = 1.0, mu0 = 0.0, sigma0 = 1.0, d0 = None, 
@@ -281,6 +281,49 @@ class RebinnedTOFPointList(list):
             plt.title("Find peak of rebinned velocity distribution")
 
         return peak_velocity, peak_velocity_err
+
+    def find_mean_velocity(self, do_print=False, do_newcode=True):
+        # search for the mean velocity
+        # errors due to poisson statistics are typically zero, because of large numbers
+        totalcounts = np.sum(self.N_v)
+        v = np.array(self.v)
+        v_err = np.array(self.v_err)
+        N_v = np.array(self.N_v)
+        N_v_err = np.array(self.N_v_err)
+
+        mean_vel = np.sum( N_v * v ) / totalcounts 
+
+        if not do_newcode:
+            totalcountserrorsquared = np.sum( N_v_err**2 )
+            partialerrorssquared = (N_v_err)**2 * v**2
+            mean_vel_err = np.sqrt( np.sum(partialerrorssquared) + totalcountserrorsquared*mean_vel**2 ) / totalcounts # probably mistake in (a - b)**2 != a**2 + b**2
+
+        if do_newcode:
+            # error propagation should be correct on the new code
+            mean_vel_err = np.sqrt( np.sum( ((v-mean_vel) * N_v_err)**2  +  (N_v*v_err)**2 ) ) / totalcounts
+
+        if do_print == True:
+            print(f"Mean velocity for {self.label} = {mean_vel:.4f} +- {mean_vel_err:.4f} m/s")
+
+        return mean_vel, mean_vel_err
+
+    def find_rms_velocity(self, do_print=False):
+        # search for the mean velocity
+        # errors due to poisson statistics are typically zero, because of large numbers
+        totalcounts = np.sum(self.N_v)
+        v = np.array(self.v)
+        v_err = np.array(self.v_err)
+        N_v = np.array(self.N_v)
+        N_v_err = np.array(self.N_v_err)
+
+        rms_vel = np.sqrt( np.sum( N_v * v**2 ) / totalcounts )
+
+        rms_vel_err = np.sqrt( np.sum( ( v**2 - rms_vel**2)**2 * N_v_err**2  +  (v * N_v * v_err)**2 ) ) / (totalcounts * rms_vel)
+
+        if do_print == True:
+            print(f"Root mean squared velocity for {self.label} = {rms_vel:.4f} +- {rms_vel_err:.4f} m/s")
+
+        return rms_vel, rms_vel_err
 
     @property
     def index(self):
