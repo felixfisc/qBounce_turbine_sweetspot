@@ -1,4 +1,6 @@
 import numpy as np
+import scipy
+import matplotlib.pyplot as plt
 
 class RawTOFPoint:
     def __init__(self, 
@@ -196,9 +198,9 @@ class RebinnedTOFPointList(list):
             else:
                 rebin_N = []
                 weights = []
-                for i in current_index_list:
-                    rebin_N.append( raw_tof_point_list[i].N_v )
-                    weights.append( 1 / (raw_tof_point_list[i].N_v_err**2) )
+                for j in current_index_list:
+                    rebin_N.append( raw_tof_point_list[j].N_v )
+                    weights.append( 1 / (raw_tof_point_list[j].N_v_err**2) )
                 rebin_N = np.array(rebin_N)
                 weights = np.array(weights)
 
@@ -212,7 +214,80 @@ class RebinnedTOFPointList(list):
                     N_v_err = 1 / np.sqrt( np.sum(weights) )
                 ))
 
+    def find_peakvel(self, 
+                     v_low = None, v_high = None,
+                     gausstype='fourpoints', 
+                     a0 = 1.0, mu0 = 0.0, sigma0 = 1.0, d0 = None, 
+                     do_plot=False, do_print=False):
 
+        if v_low is None or v_low < self.v_min:
+            v_low = self.v_min
+        if v_high is None or v_high > self.v_max:
+            v_high = self.v_max
+
+        xdata = []
+        ydata = []
+        sigmas = []
+        for i in self.index:
+            if self[i].v >= v_low and self[i].v <= v_high:
+                xdata.append(self[i].v)
+                ydata.append(self[i].N_v)
+                sigmas.append(self[i].N_v_err)
+
+        #xdata = self.v
+        #ydata = self.N_v
+        #sigmas = self.N_v_err
+
+        if gausstype == 'fourpoints':
+            if d0 is None:
+                print("Warning: no initial value given for d0, setting d0 = 0.")
+                d0 = 0
+            parameters, pcov = scipy.optimize.curve_fit(gauss4, xdata, ydata, p0=[a0, mu0, sigma0, d0], sigma=sigmas)
+            fit_A, fit_B, fit_C, fit_D = parameters
+            err_A, err_B, err_C, err_D = np.sqrt(np.diag(pcov)) # diagonal elements are one standart deviation of parameter
+            fit_y = gauss4(xdata, fit_A, fit_B, fit_C, fit_D)
+            if do_print == True:
+                print(f"Fit parameters: A={fit_A:.2f}+-{err_A:.2f}, mean={fit_B:.4f}+-{err_B:.4f}, sigma={fit_C:.2f}+-{err_C:.2f}, D={fit_D:.2f}+-{err_D:.2f}")
+        elif gausstype == 'threepoints':
+            if d0 is not None:
+                print(f"Warning, set value for d0 = {d0} will not be used as d is not a parameter for gauss3(x, a, x0, sigma).")
+            parameters, pcov = scipy.optimize.curve_fit(gauss3, xdata, ydata, p0=[a0, mu0, sigma0])
+            fit_A, fit_B, fit_C= parameters
+            err_A, err_B, err_C= np.sqrt(np.diag(pcov)) # diagonal elements are one standart deviation of parameter
+            fit_y = gauss3(xdata, fit_A, fit_B, fit_C)
+            if do_print == True:
+                print(f"Fit parameters: A={fit_A:.2f}+-{err_A:.2f}, mean={fit_B:.4f}+-{err_B:.4f}, sigma={fit_C:.2f}+-{err_C:.2f}")
+        else:
+            print(f"Error: gausstype= {gausstype} not recocnized")
+            return 
+        
+        residuen = (fit_y-ydata)
+        chi2 = np.sum(( residuen/sigmas )**2)
+        if sigmas is None:
+            chi2 = np.sum(( residuen/fit_y )**2)
+        if (len(xdata)-1) == 0:
+            chi2_reduced = np.float('nan')
+        else:
+            chi2_reduced = chi2/(len(xdata)-1)
+
+        peak_velocity = fit_B
+        peak_velocity_err = err_B
+        if do_plot == True:
+            plt.errorbar(xdata, ydata, sigmas, fmt='.', label=self.label)
+            plt.plot(xdata, fit_y, marker='.', label=f"Best Gaussian Fit, Reduced Chi2 = {chi2_reduced:.2E}")
+            plt.legend()
+            plt.xlabel("Velocity [m/s]")
+            plt.ylabel(r"counts [$(m/s)^{-1}$]")
+            plt.title("Find peak of rebinned velocity distribution")
+
+        return peak_velocity, peak_velocity_err
+
+    @property
+    def index(self):
+        a = []
+        for i in range(self.length):
+            a.append(self[i].index)
+        return a
 
     @property
     def origin_number(self):
@@ -248,3 +323,9 @@ class RebinnedTOFPointList(list):
         for i in range(self.length):
             a.append(self[i].N_v_err)
         return a
+
+# Gaussian functions
+def gauss3(x,a,x0,sigma):
+    return a*np.exp(-(x-x0)**2/(2*sigma**2))
+def gauss4(x,a,x0,sigma, d):
+    return a*np.exp(-(x-x0)**2/(2*sigma**2)) + d
