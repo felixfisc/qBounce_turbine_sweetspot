@@ -163,57 +163,112 @@ class RebinnedTOFPoint:
 
 class RebinnedTOFPointList(list):
     def __init__(self, 
-            raw_tof_point_list, 
+            input_list, 
             v_min,
             v_max,
             v_step,
             label = None):
         super().__init__()
-        self.v_step = v_step
-        self.length = int( (v_max-v_min)/v_step )
-        self.v_min = v_min
-        self.v_max = self.v_min + self.length*self.v_step
-        self.s = raw_tof_point_list.s
-        self.label = label
 
-        for i in range(self.length):
-            current_v = self.v_min + i*self.v_step
-            current_index_list = []
-            for j in range(raw_tof_point_list.length):
-                if raw_tof_point_list[j].v >= current_v and raw_tof_point_list[j].v < current_v + self.v_step:
-                    current_index_list.append(raw_tof_point_list[j].index)
+        if isinstance(input_list, RawTOFPointList):
+            self.v_step = v_step
+            self.length = int( (v_max-v_min)/v_step )
+            self.v_min = v_min
+            self.v_max = self.v_min + self.length*self.v_step
+            self.s = input_list.s
+            self.label = label
 
-            if len(current_index_list) < 1:
-                print(f"No values to rebin from in the interval [{current_v};{current_v + self.v_step}[ m/s")
-                self.append(RebinnedTOFPoint(
-                    index = i, 
-                    s = self.s, 
-                    label = self.label,
-                    origin_indices_list = current_index_list,
-                    v = current_v + 0.5 * self.v_step,
-                    N_v = 0,
-                    N_v_err = float('nan')
-                ))
-            
-            else:
-                rebin_N = []
-                weights = []
-                for j in current_index_list:
-                    rebin_N.append( raw_tof_point_list[j].N_v )
-                    weights.append( 1 / (raw_tof_point_list[j].N_v_err**2) )
-                rebin_N = np.array(rebin_N)
-                weights = np.array(weights)
+            for i in range(self.length):
+                current_v = self.v_min + i*self.v_step
+                current_index_list = []
+                for j in range(input_list.length):
+                    if input_list[j].v >= current_v and input_list[j].v < current_v + self.v_step:
+                        current_index_list.append(input_list[j].index)
 
-                self.append(RebinnedTOFPoint(
-                    index = i, 
-                    s = self.s, 
-                    label = self.label,
-                    origin_indices_list = current_index_list,
-                    v = current_v + 0.5 * self.v_step,
-                    N_v = np.sum( rebin_N * weights ) / np.sum(weights),
-                    N_v_err = 1 / np.sqrt( np.sum(weights) )
-                ))
+                if len(current_index_list) < 1:
+                    print(f"No values to rebin from in the interval [{current_v};{current_v + self.v_step}[ m/s")
+                    self.append(RebinnedTOFPoint(
+                        index = i, 
+                        s = self.s, 
+                        label = self.label,
+                        origin_indices_list = current_index_list,
+                        v = current_v + 0.5 * self.v_step,
+                        N_v = 0,
+                        N_v_err = float('nan')
+                    ))
+                
+                else:
+                    rebin_N = []
+                    weights = []
+                    for j in current_index_list:
+                        rebin_N.append( input_list[j].N_v )
+                        weights.append( 1 / (input_list[j].N_v_err**2) )
+                    rebin_N = np.array(rebin_N)
+                    weights = np.array(weights)
 
+                    self.append(RebinnedTOFPoint(
+                        index = i, 
+                        s = self.s, 
+                        label = self.label,
+                        origin_indices_list = current_index_list,
+                        v = current_v + 0.5 * self.v_step,
+                        N_v = np.sum( rebin_N * weights ) / np.sum(weights),
+                        N_v_err = 1 / np.sqrt( np.sum(weights) )
+                    ))
+
+        elif isinstance(input_list, list) and len(input_list) == 2:
+            # assume input_list[0] = v, input_list[1]=N_v
+            input_list_v = input_list[0]
+            input_list_N_v = input_list[1]
+
+            self.v_step = v_step
+            self.length = int( (v_max-v_min)/v_step )
+            self.v_min = v_min
+            self.v_max = self.v_min + self.length*self.v_step
+            self.s = None
+            self.label = label
+
+            for i in range(self.length):
+                current_v = self.v_min + i*self.v_step
+                current_index_list = []
+                for j in range(len(input_list_v)):
+                    if input_list_v[j] >= current_v and input_list_v[j] < current_v + self.v_step:
+                        current_index_list.append(j)
+
+                if len(current_index_list) < 1:
+                    print(f"No values to rebin from in the interval [{current_v};{current_v + self.v_step}[ m/s")
+                    self.append(RebinnedTOFPoint(
+                        index = i, 
+                        s = self.s, 
+                        label = self.label,
+                        origin_indices_list = current_index_list,
+                        v = current_v + 0.5 * self.v_step,
+                        N_v = 0,
+                        N_v_err = float('nan')
+                    ))
+                
+                else:
+                    rebin_N = []
+                    for j in current_index_list:
+                        rebin_N.append( input_list_N_v[j] )
+                    rebin_N = np.array(rebin_N)
+
+                    mean_rebin_N = np.mean(rebin_N)
+                    mean_rebin_N_err = np.std(mean_rebin_N) / len(rebin_N)
+
+                    self.append(RebinnedTOFPoint(
+                        index = i, 
+                        s = self.s, 
+                        label = self.label,
+                        origin_indices_list = current_index_list,
+                        v = current_v + 0.5 * self.v_step,
+                        N_v = mean_rebin_N,
+                        N_v_err = mean_rebin_N_err
+                    ))
+        else:
+            raise TypeError(f"{type(input_list)} is no valid data type for input_list")
+
+    @np.errstate(all='raise')
     def find_peak_velocity(self, 
                      v_low = None, v_high = None,
                      gausstype='fourpoints', 
@@ -262,9 +317,12 @@ class RebinnedTOFPointList(list):
             return 
         
         residuen = (fit_y-ydata)
-        chi2 = np.sum(( residuen/sigmas )**2)
-        if sigmas is None:
-            chi2 = np.sum(( residuen/fit_y )**2)
+        try:
+            r_s = residuen/sigmas
+        except:
+            print("Encountered error when dividing by sigma")
+            r_s =residuen/fit_y
+        chi2 = np.sum(( r_s )**2)
         if (len(xdata)-1) == 0:
             chi2_reduced = np.float('nan')
         else:
@@ -372,3 +430,4 @@ def gauss3(x,a,x0,sigma):
     return a*np.exp(-(x-x0)**2/(2*sigma**2))
 def gauss4(x,a,x0,sigma, d):
     return a*np.exp(-(x-x0)**2/(2*sigma**2)) + d
+
