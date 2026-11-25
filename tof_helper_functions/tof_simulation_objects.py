@@ -88,6 +88,7 @@ class Detector:
         self.bins_per_ms = num_bins/t_max_ms
         self.is_SimUCNs = False
         self.is_RawTOFPointList = False
+        self.signal_to_noise_ratio = None
         
         if self.do_gaussian_noise:
             np.random.seed(0) # for reproducibility
@@ -95,8 +96,11 @@ class Detector:
             for a in range(self.num_bins):
                 if self.data[a]<0:
                     self.data[a]=0
+            self.noise = np.mean( np.array(self.data)**2 )
         else:
             self.data = np.zeros(num_bins)
+            self.noise = None
+
 
     def plot(self, cut1 = None, cut2=None, title="Measured UCNs"):
         plt.clf()
@@ -146,3 +150,6 @@ class Detector:
                         else:
                             if bin < self.num_bins:
                                 self.data[bin]+=chopper.opening_value[i_chop]*neutrons[i].N_bin
+
+        if self.noise is not None:
+            self.signal_to_noise_ratio = (np.mean( np.array(self.data)**2 ))/ self.noise
