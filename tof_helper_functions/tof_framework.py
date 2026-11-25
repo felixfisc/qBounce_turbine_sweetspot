@@ -161,6 +161,12 @@ class RebinnedTOFPoint:
         self.N_v = N_v
         self.N_v_err = N_v_err
 
+        # NaN warner
+        if np.isnan(self.N_v):
+            print(f"nan at index {self.index} for label = {self.label}, v = {self.v} m/s")
+        elif np.isinf(self.N_v):
+            print(f"+-inf at index {self.index} for label = {self.label}, v = {self.v} m/s")
+
 class RebinnedTOFPointList(list):
     def __init__(self, 
             input_list, 
